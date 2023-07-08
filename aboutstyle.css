@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*nav */
+header {
+    padding: 1.7rem 1rem;
+    backdrop-filter: blur(10px);
+    background-color: aquamarine;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-left: 130px;
+}
+
+.logo a {
+    color: #113D6B;
+    text-decoration: none;
+}
+
+nav a {
+    color: #113D6B;
+    text-decoration: none;
+    font-size: .97rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #113D6B;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all.3s ease-in-out;
+}
+
+#click {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    section {
+        margin: 2rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 95%;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    section {
+        margin: 0rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #113D6B;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        left: -100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    section {
+        margin: 1rem 0rem;
+    }
+
+
+}

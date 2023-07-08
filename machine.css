@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.machine-pt-cont {
+    height: 100vh;
+    background-image: url('Top-Companies-Using-Machine-Learning-in-a-Profitable-Way.jpg');
+    /* background-color: aqua; */
+    /* margin: 100px; */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.machine-pt-cont .mac-pr-pt1 {
+    height: 30%;
+    width: 60%;
+    background-color: #ffbfd7;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.machine-pt-cont .mac-pr-pt2 {
+    height: 30%;
+    width: 60%;
+    background-color: #d5ffd5;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.machine-pt-cont .mac-pr-pt3 {
+    height: 30%;
+    width: 60%;
+    background-color: #8181ff;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.machine-pt-cont .mac-pr-pt1 .mac-pr1-desc {
+    font-size: 1em;
+}
+
+.machine-pt-cont .mac-pr-pt1 .mac-pr1-img img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+.machine-pt-cont .mac-pr-pt2 .mac-pr2-img img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+.machine-pt-cont .mac-pr-pt3 .mac-pr3-img img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .machine-pt-cont .mac-pr-pt1 .mac-pr1-img img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .machine-pt-cont .mac-pr-pt2 .mac-pr2-img img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .machine-pt-cont .mac-pr-pt3 .mac-pr3-img img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .machine-pt-cont .mac-pr-pt1 {
+        width: auto;
+    }
+
+    .machine-pt-cont .mac-pr-pt2 {
+        width: auto;
+    }
+
+    .machine-pt-cont .mac-pr-pt3 {
+        width: auto;
+    }
+}
